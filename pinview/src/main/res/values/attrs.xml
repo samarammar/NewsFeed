@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2017 Chaos Leong
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="itemCount" format="integer" />
+        <!-- {@deprecated Use itemWidth or itemHeight instead.} -->
+        <attr name="itemSize" format="dimension" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <!-- {@deprecated Use lineWidth instead.} -->
+        <attr name="borderWidth" format="dimension" />
+        <!-- {@deprecated Use lineColor instead.} -->
+        <attr name="borderColor" format="reference|color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="selected" format="reference|color" />
+        <attr name="notSelected" format="reference|color" />
+        <attr name="error" format="reference|color" />
+        <attr name="strokError" format="boolean" />
+        <attr name="strokSelected" format="boolean" />
+        <attr name="itemTextColor" format="reference|color" />
+        <attr name="itemHintColor" format="reference|color" />
+        <attr name="finished" format="reference|color" />
+        <attr name="shapeView" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="circle" value="2" />
+            <enum name="drawable" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

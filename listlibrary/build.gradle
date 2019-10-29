@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+//apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+/*
+
+
+publish {
+
+    def groupProjectID = 'com.mahmoud.architecturerecyclerview'
+    def artifactProjectID = "ArchitectureRecyclerView"
+    def publishVersionID = '0.1.2'
+
+    userOrg = 'mahmoudabdelaalmahmoud'
+    repoName = 'ArchitectureListView'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Architecture List View Easy Implementation of Recycler with solid Architecture it\'s module build using Android Architecture components -----Features------- 1- Reactive 2- Pagination 3- RefreshLayout 4- DataBinding 5- filter 6- change the Behavior on the fly'
+    website = 'https://github.com/MahmoudAbdelaalMahmoud/ArcitectureListView'
+
+}
+*/
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def listLibrary = rootProject.ext.listLibrary
+    def testcore = rootProject.ext.testcore
+    listLibrary.each{ k, v -> implementation v }
+    testcore.each{ k, v -> implementation v }
+
+}

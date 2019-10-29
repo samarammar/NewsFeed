@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="model"
+            type="com.newsdomain.model.Article"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+        android:layout_margin="@dimen/_14sdp"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/close_icon"
+
+            setImage="@{model.urlToImage}"
+                android:id="@+id/image"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                app:layout_constraintTop_toBottomOf="@+id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/dark_gray"
+                tools:text="slkfjgksdkj"
+            android:text="@{model.title}"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:textSize="@dimen/_14sdp"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="by ls;kdf'sd;l"
+                android:id="@+id/auther"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+                android:textColor="@color/little_gray"
+                android:textSize="@dimen/_12sdp"
+            android:text="@{model.author}"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="April 6, 2017"
+                android:textColor="@color/little_gray"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/date"
+                app:layout_constraintTop_toBottomOf="@+id/auther"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:gravity="end"
+            android:textAlignment="gravity"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_14sdp"
+            android:text="@{model.publishedAt}"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

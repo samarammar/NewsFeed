@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_standardHalf">@dimen/_4sdp</dimen>
+    <dimen name="margin_standard">@dimen/_8sdp</dimen>
+    <dimen name="margin_standard_double">@dimen/_16sdp</dimen>
+    <dimen name="margin_standard_half_double">@dimen/_12sdp</dimen>
+    <dimen name="margin_standard_doubleh">@dimen/_28sdp</dimen>
+    <dimen name="doubleMarginStandard">@dimen/_32sdp</dimen>
+
+    <dimen name="normalTextSize">@dimen/_10ssp</dimen>
+    <dimen name="textField_font_size">@dimen/_12ssp</dimen>
+    <dimen name="text_font_size">@dimen/_14ssp</dimen>
+    <dimen name="text_font_size_medium">@dimen/_12ssp</dimen>
+    <dimen name="text_font_size_small">@dimen/_9ssp</dimen>
+    <dimen name="login_marginTopLogo">@dimen/_30sdp</dimen>
+    <dimen name="half_margin_standard">@dimen/_4sdp</dimen>
+    <dimen name="login_big_margin">@dimen/_50sdp</dimen>
+    <dimen name="login_forget_password_font">@dimen/_13ssp</dimen>
+    <dimen name="button_font_size">@dimen/_16ssp</dimen>
+    <dimen name="arrowPadding">@dimen/_10sdp</dimen>
+    <dimen name="textField_bottomline">1dp</dimen>
+    <dimen name="title_text_size">@dimen/_16ssp</dimen>
+    <dimen name="registeration_image_size">@dimen/_85sdp</dimen>
+    <dimen name="registeration_image_size_">@dimen/_100sdp</dimen>
+
+
+    <dimen name="profile_image_size">@dimen/_75sdp</dimen>
+    <dimen name="large_textSize">@dimen/_15ssp</dimen>
+    <dimen name="toast_textSize">@dimen/_15ssp</dimen>
+    <dimen name="dialog_height">@dimen/_320sdp</dimen>
+    <dimen name="dark_textsize">@dimen/_18sdp</dimen>
+    <dimen name="white_textsize">@dimen/_20sdp</dimen>
+
+    <item name="my_percent1" format="float" type="dimen">0.25</item>
+    <item name="my_percent2" format="float" type="dimen">0.95</item>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_padding">@dimen/_60sdp</dimen>
+    <dimen name="zero">0dp</dimen>
+</resources>

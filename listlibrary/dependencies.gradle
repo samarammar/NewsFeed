@@ -1,0 +1,100 @@
+ext {
+    kotlin_version = '1.3.10'
+    androidMinSdkVersion = 17
+    androidTargetSdkVersion = 28
+    androidCompileSdkVersion = 28
+
+//    design versions
+    supportLibraryVersion = '28.0.0'
+    googleMaterialVersion = '1.0.0-beta01'
+    constraintLayoutVersion = '1.1.3'
+    vectordrawableVersion = '1.0.1'
+    sdpDimenVersion = '1.0.6'
+    carbonVersion = '0.15.3'
+    circleImageVersion = '2.2.0'
+    supportVersion = '1.0.0-beta01'
+    shapeImageViewVersion = '0.9.3'
+    exoPlayerVersion = '2.8.2'
+    circleindicatorVersion = '1.2.2@aar'
+
+
+    // buildVersions
+    multidexVersion = '1.0.3'
+    appcompatxVersion = '1.0.2'
+    ktxVersion = '1.0.1'
+    annotationsVersion = '1.0.0'
+
+    // reactive versions
+    rxKotlinVersion = '2.3.0'
+    rxAndroidVersion = '2.1.0'
+    rxJavaVersion = '2.2.2'
+    AAVersion = '4.5.2'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    rxBindingVersion = '3.0.0-alpha2'
+    rxRelayVersion = '2.1.0'
+
+//    dependency Injection Versions
+    daggerVersion = '2.19'
+
+    // architecture component version
+    lifeCycleVersion = '1.1.1'
+
+
+
+
+
+
+
+
+
+    // test Versions
+    junitVersion = '4.12'
+    testRunnerVersion = '1.0.0'
+    espressoVersion = '2.2.2'
+
+
+    //social
+    twitterVersion = '3.1.1'
+    facebookVersion = '4.34.0'
+    firebaseVersion = '16.0.2'
+    googleServicesVersion = '15.0.1'
+
+    socialLib = [
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+            twitter           : "com.twitter.sdk.android:twitter:${twitterVersion}",
+//            twitterCore       : "com.twitter.sdk.android:twitter-core:${twitterVersion}",
+            facebook          : "com.facebook.android:facebook-android-sdk:${facebookVersion}",
+            firebaseAuth      : "com.google.firebase:firebase-auth:${firebaseVersion}",
+            googleServices    : "com.google.android.gms:play-services-auth:${googleServicesVersion}",
+            gcm               : "com.google.android.gms:play-services-gcm:${googleServicesVersion}",
+            gson              : "com.google.code.gson:gson:${gsonVersion}"
+    ]
+
+    testcore = [
+            junit     : "junit:junit:${junitVersion}",
+            testRunner: "com.android.support.test:runner:${testRunnerVersion}",
+            espresso  : "com.android.support.test.espresso:espresso-core:${espressoVersion}"
+    ]
+
+
+    listLibrary = [
+            kotlinStandardLibs          : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+            appCompat                   : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+            cardView                    : "com.android.support:cardview-v7:${supportLibraryVersion}",
+            recyclerview                : "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+            supportV4                   : "com.android.support:support-v4:${supportLibraryVersion}",
+            rxKotlin                    : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}", // reactive extension for kotlin
+            rxAndroid                   : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}", // reactive extension for kotlin
+            rxJava                      : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            //architecture component
+            lifecycle_ViewModel_LiveData: "android.arch.lifecycle:extensions:$lifeCycleVersion",
+            lifeCycleCompiler           : "android.arch.lifecycle:common-java8:$lifeCycleVersion",
+//            ReactiveStreamssupportLiveData:"android.arch.lifecycle:reactivestreams:$lifeCycleVersion"
+            constraintLayout            : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}", // layout container for arranging View in constraints like IOS
+
+
+    ]
+
+}

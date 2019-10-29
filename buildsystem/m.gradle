@@ -1,0 +1,70 @@
+/*********************** Rx java  ************************/
+def rxJava_version = "2.1.16"
+def rxAndroid_version = "2.0.2"
+implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
+implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid_version"
+
+
+/***********************  Retrofit  ************************/
+def retrofit_version = "2.4.0"
+def retrofitRxAdapter_version = "2.3.0"
+implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitRxAdapter_version"
+
+
+/***********************  Okhttp  ************************/
+def okHttp_version = "3.10.0"
+def okHttpLoggingInterceptor_version = "3.9.0"
+implementation "com.squareup.okhttp3:okhttp:$okHttp_version"
+implementation "com.squareup.okhttp3:logging-interceptor:$okHttpLoggingInterceptor_version"
+
+/***********************  Picasso  ************************/
+def picasso_version = "1.1.0"
+implementation "com.jakewharton.picasso:picasso2-okhttp3-downloader:$picasso_version"
+
+
+/***********************  Gson  ************************/
+def gson_version = "2.8.5"
+def gsonConverter_version = "2.3.0"
+implementation "com.google.code.gson:gson:$gson_version"
+implementation "com.squareup.retrofit2:converter-gson:$gsonConverter_version"
+
+/***********************  Dagger  ************************/
+def dagger_version = "2.16"
+implementation "com.google.dagger:dagger:$dagger_version"
+implementation "com.google.dagger:dagger-android-support:$dagger_version"
+kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+/***********************  ViewModel & LiveData & Lifecycle  ************************/
+def lifecycle_version = "1.1.1"
+implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+implementation "android.arch.lifecycle:common-java8:$lifecycle_version"
+implementation "android.arch.lifecycle:reactivestreams:$lifecycle_version"
+testImplementation "android.arch.core:core-testing:$lifecycle_version"
+
+
+/***********************  Room  ************************/
+def room_version = "1.1.1"
+implementation "android.arch.persistence.room:runtime:$room_version"
+annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+implementation "android.arch.persistence.room:rxjava2:$room_version"
+testImplementation "android.arch.persistence.room:testing:$room_version"
+
+
+/***********************  Paging  ************************/
+def paging_version = "1.0.1"
+implementation "android.arch.paging:runtime:$paging_version"
+implementation "android.arch.paging:rxjava2:1.0.1"
+
+/***********************  Navigation   ************************/
+def nav_version = "1.0.0-alpha02"
+implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
+implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
+androidTestImplementation "android.arch.navigation:navigation-testing-ktx:$nav_version"
+
+
+/***********************  WorkManager   ************************/
+def work_version = "1.0.0-alpha04"
+implementation "android.arch.work:work-runtime:$work_version" // use -ktx for Kotlin
+implementation "android.arch.work:work-firebase:$work_version"
+androidTestImplementation "android.arch.work:work-testing:$work_version"

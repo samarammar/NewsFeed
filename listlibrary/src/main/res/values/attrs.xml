@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArchitectureListView">
+        <attr name="vmClassName" format="string"/>
+        <attr name="fragmentTag" format="string"/>
+        <attr name="fragmentId" format="reference"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unAuthorized">هذا المستخدم ليس له حق الوصول الى هذة المعلومات</string>
+    <string name="timeOutError">تم الوصول للحد الأقصى من الوقت لجلب البيانات برجاء التأكد من شبكة الإنترنت</string>
+    <string name="networkError">من فضلك التأكد من شبكة الإنترنت</string>
+    <string name="error_login">Phone Not Found You Can Register.</string>
+
+</resources>

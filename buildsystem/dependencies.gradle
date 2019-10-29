@@ -1,0 +1,435 @@
+ext {
+
+    kotlin_version = '1.3.10'
+
+    androidMinSdkVersion = 17
+
+    androidTargetSdkVersion = 28
+
+    androidCompileSdkVersion = 28
+
+//    design versions
+    stateViewVersion = '2.1.1'
+    supportLibraryVersion = '28.0.0'
+
+    googleMaterialVersion = '1.0.0-beta01'
+
+    constraintLayoutVersion = '1.1.3'
+
+    vectordrawableVersion = '1.0.1'
+
+    sdpDimenVersion = '1.0.6'
+
+    carbonVersion = '0.15.3'
+
+    circleImageVersion = '2.2.0'
+
+    supportVersion = '1.0.0-beta01'
+
+    shapeImageViewVersion = '0.9.3'
+
+    exoPlayerVersion = '2.8.2'
+
+    circleindicatorVersion = '1.2.2@aar'
+
+    // buildVersions
+
+    multidexVersion = '1.0.3'
+
+    appcompatxVersion = '1.0.2'
+
+    ktxVersion = '1.0.1'
+
+    annotationsVersion = '1.0.0'
+
+    // reactive versions
+
+    rxKotlinVersion = '2.3.0'
+
+    rxAndroidVersion = '2.1.0'
+
+    rxJavaVersion = '2.2.2'
+
+    AAVersion = '4.5.2'
+
+    javaxAnnotationVersion = '1.0'
+
+    javaxInjectVersion = '1'
+
+    rxBindingVersion = '3.0.0-alpha2'
+
+    rxRelayVersion = '2.1.0'
+
+//    dependency Injection Versions
+
+    daggerVersion = '2.19'
+
+    // architecture component version
+
+    lifeCycleVersion = '1.1.1'
+
+    //data Versions
+
+    gsonVersion = '2.8.5'
+
+    picassoVersion = '2.71828'
+
+    retrofitVersion = '2.5.0'
+
+    timberVersion = '4.7.1'
+
+    okhttp3Version = '3.12.0'
+
+    okhttpDownloaderVersion = '1.1.0'
+
+    // utils
+
+    utilcodeVersion = '1.22.10'
+
+    frescoVersion = '1.11.0'
+
+    frescoViewerVersion = '0.5.0'
+
+    caligraphyFontsVersion = '2.3.0'
+
+    easyImageVersion = '2.1.0'
+
+    annotationProcessorVersion = '2.3.2'
+
+    dispatcherVersion = '2.3.2'
+
+    comprossorVersion = '2.1.0'
+
+    //social
+
+    twitterVersion = '3.1.1'
+
+    facebookVersion = '4.34.0'
+
+    firebaseVersion = '16.0.2'
+
+    googleServicesVersion = '16.0.0'
+
+    //chat
+
+    chatKitVersion = '0.3.3'
+
+    // test Versions
+
+    junitVersion = '4.12'
+
+    testRunnerVersion = '1.0.0'
+
+    espressoVersion = '2.2.2'
+
+//    location
+    rxLocationVersion = '2.1@aar'
+    mviVersion = '3.1.0'
+
+    PrettyListView = "1.0.0"
+    uicore = [
+            PrettyListView                : "com.github.Tripl3Dev:PrettyListView:${PrettyListView}",
+            // build libraries
+            mvi                           : "com.hannesdorfmann.mosby3:mvi:${mviVersion}",
+
+            kotlinStandardLibs            : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat                     : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+//            ktxCore                 : "androidx.core:core-ktx:${ktxVersion}", // ktx core => library that enable extension method,lambda,closure
+
+            multidex                      : "com.android.support:multidex:${multidexVersion}", // overcome 64K methods problem in android prior lollipop
+
+            annotations                   : "com.android.support:support-annotations:${supportLibraryVersion}", // enable android annotations
+
+//            androidAnnotation       : "org.androidannotations:androidannotations-api:${AAVersion}", // enable android annotations
+
+            //design libraries
+
+            googleMaterial                : "com.android.support:design:${supportLibraryVersion}", // material design library => provide excellent UI component to use
+
+            constraintLayout              : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}", // layout container for arranging View in constraints like IOS
+
+            vectorDrawable                : "com.android.support:support-vector-drawable:${supportLibraryVersion}", // enable you to use vectors in your application
+
+            carbon                        : "tk.zielony:carbon:${carbonVersion}",
+
+            circleImageView               : "de.hdodenhof:circleimageview:${circleImageVersion}",
+
+            // rest libraries
+
+            retrofit2                     : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+
+            okHttpLoggingInterceptor      : "com.squareup.okhttp3:logging-interceptor:${okhttp3Version}",
+
+            okhttp3                       : "com.squareup.okhttp3:okhttp:${okhttp3Version}",
+
+            okhttpDownloader              : "com.jakewharton.picasso:picasso2-okhttp3-downloader:${okhttpDownloaderVersion}",
+
+            gsonretrofitConverter         : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+
+            rxretrofitAdapter             : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+
+            gson                          : "com.google.code.gson:gson:${gsonVersion}",
+
+            timber                        : "com.jakewharton.timber:timber:${timberVersion}",
+
+            picasso                       : "com.squareup.picasso:picasso:${picassoVersion}",
+
+            // dependency injection
+
+            dagger                        : "com.google.dagger:dagger:${daggerVersion}",
+
+            daggersupport                 : "com.google.dagger:dagger-android-support:${daggerVersion}",
+
+            //utils
+
+            utils                         : "com.blankj:utilcode:${utilcodeVersion}",
+
+            easyImage                     : "com.github.jkwiecien:EasyImage:${easyImageVersion}",
+
+            fresco                        : "com.facebook.fresco:fresco:${frescoVersion}",
+
+            dispatcher                    : "com.github.hotchemi:permissionsdispatcher:${dispatcherVersion}",
+
+            frescoViewer                  : "com.github.stfalcon:frescoimageviewer:${frescoViewerVersion}",
+
+//            compressor                    : "id.zelory:compressor:${comprossorVersion}",
+
+            //fonts
+
+            caligraphyFonts               : "uk.co.chrisjenx:calligraphy:${caligraphyFontsVersion}",
+
+            ssp                           : "com.intuit.ssp:ssp-android:${sdpDimenVersion}",
+
+            sdp                           : "com.intuit.sdp:sdp-android:${sdpDimenVersion}",
+
+            //architecture component
+
+            lifecycle_ViewModel_LiveData  : "android.arch.lifecycle:extensions:$lifeCycleVersion",
+
+            lifeCycleCompiler             : "android.arch.lifecycle:common-java8:$lifeCycleVersion",
+
+            ReactiveStreamssupportLiveData: "android.arch.lifecycle:reactivestreams:$lifeCycleVersion",
+
+            stateView                     : "com.github.Tripl3Dev:PrettyStateView:${stateViewVersion}",
+
+            loading                       : 'com.wang.avi:library:2.1.3',
+
+            //recycler
+//            List                          : 'com.mahmoud.architecturerecyclerview:ArchitectureRecyclerView:0.1.2'
+    ]
+
+    uicoreProcessors = [
+
+            dagger2compiler     : "com.google.dagger:dagger-compiler:${daggerVersion}",
+
+            dagger2Processor    : "com.google.dagger:dagger-android-processor:${daggerVersion}",
+
+            permissionsProcessor: "com.github.hotchemi:permissionsdispatcher-processor:${annotationProcessorVersion}",
+
+//            databinding : 'com.android.databinding:compiler:3.0.1',
+
+//            androidAnnotation: "org.androidannotations:androidannotations:${AAVersion}"
+
+    ]
+
+    supportdagger = [
+
+            //            dagger         : "com.google.dagger:dagger:${daggerVersion}",
+
+            //            daggersupport  : "com.google.dagger:dagger-android-support:${daggerVersion}",
+
+//            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+
+            appCompat  : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+//            ktxCore        : "androidx.core:core-ktx:${ktxVersion}", // ktx core => library that enable extension method,lambda,closure
+
+            multidex   : "com.android.support:multidex:${multidexVersion}", // overcome 64K methods problem in android prior lollipop
+
+            annotations: "com.android.support:support-annotations:${supportLibraryVersion}", // enable android annotations
+
+            javaxInject: "javax.inject:javax.inject:${javaxInjectVersion}"
+
+    ]
+
+    domaincore = [
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            rxKotlin          : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}", // reactive extension for kotlin
+
+            rxAndroid         : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}", // reactive extension for kotlin
+
+//            javaxAnnotation   : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+
+            javaxInject       : "javax.inject:javax.inject:${javaxInjectVersion}"
+
+    ]
+
+    datacore = [
+
+            // rest libraries
+
+            retrofit2               : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+
+            okHttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${okhttp3Version}",
+
+            okhttp3                 : "com.squareup.okhttp3:okhttp:${okhttp3Version}",
+
+            gsonretrofitConverter   : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+
+            compressor              : "id.zelory:compressor:${comprossorVersion}",
+
+            rxretrofitAdapter       : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+
+            gson                    : "com.google.code.gson:gson:${gsonVersion}",
+            multidex                : "com.android.support:multidex:${multidexVersion}",
+
+            rxLocation              : "pl.charmas.android:android-reactive-location2:${rxLocationVersion}",
+
+            locations               : "com.google.android.gms:play-services-location:${googleServicesVersion}",
+
+    ]
+
+    testcore = [
+
+            junit     : "junit:junit:${junitVersion}",
+
+            testRunner: "com.android.support.test:runner:${testRunnerVersion}",
+
+            espresso  : "com.android.support.test.espresso:espresso-core:${espressoVersion}"
+
+    ]
+
+    validation = [
+
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+            rxKotlin          : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}", // reactive extension for kotlin
+
+            rxAndroid         : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}", // reactive extension for kotlin
+
+            rxBinding         : "com.jakewharton.rxbinding3:rxbinding:${rxBindingVersion}",
+
+            rxJava            : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+
+            rxRelay           : "com.jakewharton.rxrelay2:rxrelay:${rxRelayVersion}",
+
+            googleMaterial    : "com.android.support:design:${supportLibraryVersion}", // material design library => provide excellent UI component to use
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+    ]
+
+    socialLib = [
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+            twitter           : "com.twitter.sdk.android:twitter:${twitterVersion}",
+
+//            twitterCore       : "com.twitter.sdk.android:twitter-core:${twitterVersion}",
+
+            facebook          : "com.facebook.android:facebook-android-sdk:${facebookVersion}",
+
+            firebaseAuth      : "com.google.firebase:firebase-auth:${firebaseVersion}",
+
+//            googleServices    : "com.google.android.gms:play-services-auth:${googleServicesVersion}",
+//
+//            gcm               : "com.google.android.gms:play-services-gcm:${googleServicesVersion}",
+
+            gson              : "com.google.code.gson:gson:${gsonVersion}"
+
+    ]
+
+    chatModule = [
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+            chatKit           : "com.github.stfalcon:chatkit:${chatKitVersion}",
+
+            picasso           : "com.squareup.picasso:picasso:${picassoVersion}",
+
+            cardView          : "com.android.support:cardview-v7:${supportLibraryVersion}",
+
+            googleMaterial    : "com.android.support:design:${supportLibraryVersion}", // material design library => provide excellent UI component to use
+
+            circleImageView   : "de.hdodenhof:circleimageview:${circleImageVersion}",
+
+            shapeImageView    : "com.github.siyamed:android-shape-imageview:${shapeImageViewVersion}",
+
+            exoPlayer         : "com.google.android.exoplayer:exoplayer:${exoPlayerVersion}",
+
+            circleindicator   : "me.relex:circleindicator:${circleindicatorVersion}",
+
+    ]
+
+    pinView = [
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+    ]
+
+    bubble = [
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+    ]
+
+    prettyStates = [
+
+            kotlinStandardLibs: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat         : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+//            cardView          : "com.android.support:cardview-v7:${supportLibraryVersion}",
+
+            recyclerview      : "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+
+            constraintLayout  : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}", // layout container for arranging View in constraints like IOS
+
+    ]
+
+    listLibrary = [
+
+            kotlinStandardLibs          : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}", // standard kotlin library
+
+            appCompat                   : "com.android.support:appcompat-v7:${supportLibraryVersion}", // androidx appcompat
+
+            cardView                    : "com.android.support:cardview-v7:${supportLibraryVersion}",
+
+            recyclerview                : "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+
+            supportV4                   : "com.android.support:support-v4:${supportLibraryVersion}",
+
+            rxKotlin                    : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}", // reactive extension for kotlin
+
+            rxAndroid                   : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}", // reactive extension for kotlin
+
+            rxJava                      : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+
+            //architecture component
+
+            lifecycle_ViewModel_LiveData: "android.arch.lifecycle:extensions:$lifeCycleVersion",
+
+            lifeCycleCompiler           : "android.arch.lifecycle:common-java8:$lifeCycleVersion",
+
+//            ReactiveStreamssupportLiveData:"android.arch.lifecycle:reactivestreams:$lifeCycleVersion"
+
+            constraintLayout            : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}", // layout container for arranging View in constraints like IOS
+
+    ]
+
+}
+
+
+

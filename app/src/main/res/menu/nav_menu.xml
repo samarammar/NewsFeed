@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:showIn="nav_View">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/action_explore"
+        android:enabled="true"
+        android:icon="@drawable/ic_compass"
+        android:title="Explore"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_msg"
+        android:enabled="true"
+        android:icon="@drawable/ic_conversation"
+        android:title="Live Chat"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_gallary"
+        android:enabled="true"
+        android:icon="@drawable/ic_image"
+        android:title="Gallary"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_heart"
+        android:enabled="true"
+        android:icon="@drawable/ic_heart"
+        android:title="Wish List"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_magazine"
+        android:enabled="true"
+        android:icon="@drawable/ic_open_magazine"
+        android:title="E-Magazine"
+        app:showAsAction="ifRoom" />
+</group>
+</menu>
